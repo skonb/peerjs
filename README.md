@@ -4,7 +4,7 @@ PeerJS provides a complete, configurable, and easy-to-use peer-to-peer API built
 
 ## Notice 
 This branch is a customized version of PeerJS for NTT Communications's WebRTC platform SkyWay.
-- [http://nttcom.github.io/skyway](https://nttcom.github.io/skyway)
+- [http://nttcom.github.io/skyway](http://nttcom.github.io/skyway/en)
 
 ## Setup
 
