@@ -1,11 +1,15 @@
 {
-  "name": "peerjs",
-  "version": "0.3.14",
-  "description": "PeerJS client",
+  "name": "skyway-peerjs",
+  "version": "0.4.0",
+  "description": "This branch is a customized version of PeerJS for NTT Communications's WebRTC platform SkyWay.",
+  "homepage": "http://skyway.io/en",
   "main": "./lib/peer.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/peers/peerjs.git"
+    "url": "git://github.com/nttcom/peerjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nttcom/peerjs/issues",
   },
   "author": "Michelle Bu, Eric Zhang, NTT Communications",
   "license": "MIT",
