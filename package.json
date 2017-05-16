@@ -9,7 +9,7 @@
     "url": "git://github.com/nttcom/peerjs.git"
   },
   "bugs": {
-    "url": "https://github.com/nttcom/peerjs/issues",
+    "url": "https://github.com/nttcom/peerjs/issues"
   },
   "author": "Michelle Bu, Eric Zhang, NTT Communications",
   "license": "MIT",
