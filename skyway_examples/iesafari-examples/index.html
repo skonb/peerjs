@@ -53,15 +53,17 @@
                 });
 
                 $('#video-enabled-checkbox').change(function () {
-                    if ($(this).is(':checked')) {
-                        $.map(window.localStream.getVideoTracks(), function (track, i) {
-                            track.enabled = true;
-                        });
-                    } else {
-                        $.map(window.localStream.getVideoTracks(), function (track, i) {
-                            track.enabled = false;
-                        });
-                    }
+                    var checked = $(this).is(':checked');
+                    $.map(window.localStream.getVideoTracks(), function (track, i) {
+                        track.enabled = checked;
+                    });
+                });
+
+                $('#audio-enabled-checkbox').change(function () {
+                    var checked = $(this).is(':checked');
+                    $.map(window.localStream.getAudioTracks(), function (track, i) {
+                        track.enabled = checked;
+                    });
                 });
 
                 $('#screen-sharing-enabled-checkbox').change(function () {
@@ -221,9 +223,13 @@
             </div>
         </div>
         <div>
-            <p>Video is enabled:</p>
+            <label>Video is enabled:</label>
             <input type="checkbox" id="video-enabled-checkbox" checked="checked"/>
             <br/>
+            <label>Audio is enabled:</label>
+            <input type="checkbox" id="audio-enabled-checkbox" checked="checked"/>
+            <br/>
+
             <p>Screen sharing</p>
             <input type="checkbox" id="screen-sharing-enabled-checkbox"/>
         </div>
